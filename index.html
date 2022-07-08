@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<title>Frontend Mentor | Interactive rating component</title>
+	<link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+	<main>
+		<section class="mainBox" >
+			<div class="topStar">
+				<img src="./images/icon-star.svg" alt="star icon">
+			</div>
+
+			<article class="txt">
+				<h2>How did we do?</h2>
+				<p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+			</article>
+
+			<div class="rating">
+				<button class="xxx" type="button" value="1" onclick="ratingNumber(this)" id="one">1</button>
+				<button class="xxx" type="button" value="2" onclick="ratingNumber(this)" id="two">2</button>
+				<button class="xxx" type="button" value="3" onclick="ratingNumber(this)" id="three">3</button>
+				<button class="xxx" type="button" value="4" onclick="ratingNumber(this)" id="four">4</button>
+				<button class="xxx" type="button" value="5" onclick="ratingNumber(this)" id="five">5</button>
+			</div>
+
+			<button id="submit" onclick="pageTwo()">Submit</button>
+		</section>
+
+		
+		<section class="outBox">
+			<div class="photu">
+				<img src="./images/illustration-thank-you.svg" alt="">
+			</div>
+			<div class="outof">
+				<p>You selected <span id="final">5</span> out of 5</p>
+			</div>
+
+			<article class="ltxt">
+				<h2>Thank you!</h2>
+				<p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+			</article>
+		</section>
+
+		<script src="./index.js"></script>
+	</main>
+</body>
+</html>
